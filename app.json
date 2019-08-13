@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/test",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

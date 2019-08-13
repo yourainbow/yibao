@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "肤质历史",
+  "usingComponents": {
+    "van-steps": "../../dist/steps/index"
+  }
+}

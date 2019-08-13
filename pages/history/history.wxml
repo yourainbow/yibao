@@ -1,0 +1,16 @@
+
+  <view class="body">
+    <scroll-view scroll-y="true" style="height: 1100rpx">
+      <view class="scrollBox"  wx:for="{{goodslist}}">
+        <view class="box1">
+          <view class="Boxname">{{item.time}}</view> 
+          <view class="Boxname">{{item.thing}}</view>   
+        </view>
+        <view class="box2">
+         <image src="../../images/slip.png" style="width:60rpx;height:60rpx" class="boxim"></image> 
+        </view>   
+      </view>
+    </scroll-view>
+  </view>
+
+

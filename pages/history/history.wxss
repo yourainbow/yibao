@@ -1,0 +1,41 @@
+
+
+
+.scrollBox{
+  width: 120rpx;
+  height: 260rpx;
+}
+.box1{
+  border-radius: 26rpx;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-color: #1cfffe;
+  border-top-color: #1cfffe;
+  border-right-color: #1cfffe;
+  width: 120px; 
+  height:80px;
+}
+
+.Boxname{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 15rpx;
+}
+
+.box2{
+  width: 120px; 
+  height:60px;
+  position: relative;
+  top: 18rpx;
+
+}
+.boxim{
+  margin-left:80rpx;
+}
+
+
+
+
+
+

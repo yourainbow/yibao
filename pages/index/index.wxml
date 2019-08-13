@@ -1,0 +1,88 @@
+<view class="head">
+  <view class="boxleft">
+    <image src="../../images/cloud.png" style="width:100rpx;height:60rpx" class="sky" ></image>
+  </view>
+  <view class="boxright">
+    <view class="righttop">
+      <view class="box1"><text class="box1text">多云 28~32℃</text></view>
+      <view class="box2"><text class="box2text">保湿指数</text></view>
+      <view class="box3">
+        <van-rate value="{{ value }}" size="{{15}}"  bind:change="onChange" />
+      </view>
+      <view class="box4"><text class="box4text">💧74%</text></view>
+    </view>
+    <view class="rightdown">
+      <view class="box5">
+        <image src="../../images/location.png" style="height:40rpx;width:40rpx" class="box5image"></image>
+      </view>
+      <view class="box6"><text class="box6text">深圳</text></view>
+      <view class="box7"><text class="box7text">防护指数</text></view>
+      <view class="box8">
+        <van-rate value="{{ value }}" size="{{15}}"  bind:change="onChange1" />
+      </view>
+      <view class="box9"><text class="box9text">UV  5-6  中等</text></view>
+    </view>
+  </view>
+</view>
+
+
+<view class="body">
+  <view class="bodyGoods" wx:for="{{goods}}">
+    <view class="bodyGoods-top">
+      <text class="icon">|</text>
+      <text class="goodstext">{{item.good_name}}</text>
+    </view>
+    <view class="bodyGoods-down">
+      <navigator url="{{item.good_url}}" class="goodurl">
+        <image class="goodsimage" src="{{item.good_image}}" style="width:140rpx;height:140rpx"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="foot">
+  <van-tabs swipeable="ture" animated="ture" color="#1cfffb" active="{{ active }}">
+      <van-tab title="推荐">
+        <view class="lastbox">
+          <view wx:for='{{goodsshow}}' class="lastbox1" >
+            <image class="lastbox2" src="{{item.thumbnail}}" mode="scaleToFill"></image>
+            <view class="commodity__info">
+              <view class="commodity__name">{{ item.name }}</view>
+              <view class="commodity__price">￥{{ item.price }}</view>
+            </view>
+          </view>
+        </view>        
+      </van-tab>
+      <van-tab title="乳液">
+        <view class="lastbox2b">
+          <view wx:for='{{goodsshow1}}' class="lastbox3" >
+            <image class="lastbox4" src="{{item.thumbnail}}" mode="scaleToFill"></image>
+            <view class="commodity__info">
+              <view class="commodity__name">{{ item.name }}</view>
+              <view class="commodity__price">￥{{ item.price }}</view>
+            </view>
+          </view>
+        </view>        
+      </van-tab>
+      <van-tab title="面膜">
+        <view class="lastbox3b">
+          <view wx:for='{{goodsshow2}}' class="lastbox5" >
+            <image class="lastbox6" src="{{item.thumbnail}}" mode="scaleToFill"></image>
+            <view class="commodity__info">
+              <view class="commodity__name">{{ item.name }}</view>
+              <view class="commodity__price">￥{{ item.price }}</view>
+            </view>
+          </view>
+        </view> 
+      </van-tab>
+      <van-tab title="洁面">洁面</van-tab>
+      <van-tab title="粉底">粉底</van-tab>
+      <van-tab title="眼影">眼影</van-tab>
+      <van-tab title="口红">口红</van-tab>
+    </van-tabs>
+</view>
+
+
+
+
+
